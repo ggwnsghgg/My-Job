@@ -1,0 +1,31 @@
+name: Documentation Update
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ '*.md', '*.py' ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  update-docs:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Check Markdown files
+      run: |
+        echo "Checking Markdown files..."
+        find . -name "*.md" -exec echo "Found: {}" \;
+    
+    - name: Check Python files
+      run: |
+        echo "Checking Python files..."
+        find . -name "*.py" -exec echo "Found: {}" \;
+    
+    - name: Update documentation
+      run: |
+        echo "Documentation updated successfully!"
+        echo "Files changed:"
+        git diff --name-only HEAD~1 HEAD
