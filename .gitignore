@@ -1,0 +1,53 @@
+# IDE
+.idea/
+.vscode/
+.cursor/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Odoo
+odoo/
+enterprise-*/
+addons/
+filestore/
+sessions/
+*.log
+
+# Custom modules (커스텀 모듈들 - 별도 Git으로 관리)
+custom/
+22/
+2020/
+design-themes/
+interzero/
+kapproval/
+marineland/
+seobuk-*/
+tclab/
+thecoffee-api-and-modules/
+web-proeye/
+
+# Node.js projects
+odoo-jsonrpc-example/
+node_modules/
+
+# Other
+pgvector/
+*.pid
+*.seed
+*.pid.lock
+
