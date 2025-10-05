@@ -29,7 +29,15 @@ sessions/
 *.log
 
 # Custom modules (커스텀 모듈들 - 별도 Git으로 관리)
-custom/
+# linkup-package는 서브모듈이므로 제외하고 나머지만 무시
+custom/16upgrade/
+custom/20240501-Kim-s-Asia/
+custom/Busan-Catholic/
+custom/design-themes/
+custom/marineland/
+custom/soxnlox/
+custom/Thecoffee/
+custom/web-proeye/
 22/
 2020/
 design-themes/
